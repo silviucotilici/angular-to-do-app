@@ -3,7 +3,7 @@
 </h1>
 
 <div class="card-deck">
-  <app-todo *ngFor="let item of toDos"></app-todo>
+  <app-todo *ngFor="let item of toDos" [toDo]='item' (delete)='onDelete($event)'></app-todo>
 </div>
 
 

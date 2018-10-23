@@ -1,7 +1,9 @@
 <div class="card">    
     
-    <div class="card-body">
-      <h4 class="card-title">Title</h4>
-      <p class="card-text">Text</p>
+    <div class="card-body">       
+      <h4 class="card-title">{{toDo.name}}</h4>
+      <!-- <p class="card-text">ID:{{toDo.id}}</p> -->
+      <button href="#" class="btn btn-danger float-right" (click)="onDel()">Delete</button>
     </div>
+
   </div>

@@ -18,4 +18,9 @@ export class TodoService {
   getToDos(): Observable<ToDo[]> {
     return of(this.toDos);
   }
+
+  remove(item){    
+    let pos = this.toDos.indexOf(item);
+    this.toDos.splice(pos,1);   
+  }
 }

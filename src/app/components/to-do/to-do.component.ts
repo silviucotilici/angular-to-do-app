@@ -29,4 +29,10 @@ export class ToDoComponent implements OnInit {
         .subscribe(todos => this.toDos = todos);
   }
 
+  onDelete(toDo){
+    console.log('delete received for:'+toDo.id);
+    this.toDoService.remove(toDo);
+        
+  }
+
 }
